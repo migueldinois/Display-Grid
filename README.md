@@ -35,54 +35,11 @@ code .
 # então ative Live Server ou abra o arquivo HTML no navegador
 ```
 
-## Exemplo rápido de CSS Grid
-
-HTML mínimo:
-
-```html
-<div class="grid">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-</div>
-```
-
-CSS mínimo:
-
-```css
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-.grid > div {
-  background: #0ea5e9;
-  color: #fff;
-  padding: 16px;
-  text-align: center;
-}
-```
-
-## Badges e ícones 🎨
-
-- Use emojis para marcar seções e tornar o README mais agradável: 🚀, 🧩, 📁, ⚙️
-- Para badges dinâmicos, use o serviço `shields.io` como já demonstrado no topo.
-
 ## Boas práticas de estudo ✅
 
 - Faça pequenas alterações nos exemplos e observe o resultado no navegador.
 - Comente seu CSS para lembrar decisões de layout.
 - Compare Grid e Flexbox para entender quando usar cada um.
-
-## Contribuição 🤝
-
-Contribuições são bem-vindas: abra issues com dúvidas, sugestões de exercícios ou PRs com correções e melhorias.
-
-### Guias rápidos para PR
-
-- Faça um fork e trabalhe em branch nomeada `feature/nome-da-feature`.
-- Explique a mudança no título do PR e adicione um comentário descrevendo o que foi feito.
 
 ## Licença
 
@@ -90,15 +47,8 @@ Este projeto está sob a licença MIT — veja o arquivo `LICENSE` (se não exis
 
 ## Contato
 
-- Autor: estudo pessoal
-- Email: (adicione seu contato) ou use o perfil do GitHub.
+- Autor: Miguel Lima Dinois
+- Email: miguel.dinois@aluno.senai.br
 
 ---
 
-Se quiser, eu posso:
-
-- adicionar um `LICENSE` (MIT) automaticamente;
-- gerar imagens/snapshots de exemplos e adicioná-los em `assets/`;
-- traduzir o README para inglês.
-
-— Boa prática: mantenha o README enxuto e direcionado ao objetivo de estudo.
