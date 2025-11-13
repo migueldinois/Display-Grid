@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gridContainer {
+
+    justify-content: center;
+
+    align-items: center;    
+
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    background-color: black;
+}
+ .gridItem {
+    background-color: rgba(60, 255, 0, 0.605);
+    width: 200px;
+    height: 200px;
+  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+/* .gradient {
+    background: #ff0000;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(182deg,rgba(255, 238, 0, 0.56) 0%, rgba(255, 200, 0, 0.28) 53%, rgba(255, 238, 128, 0.13) 100%);
+}
+
+body {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/33217723/pexels-photo-33217723.jpeg);
+}
+
+.sol {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    left: 45%;
+    
+
+    
+    background: radial-gradient(circle,rgba(255, 111, 0, 1) 0%, rgba(255, 200, 0, 1) 53%, rgba(255, 238, 128, 0.33) 100%);
+} */
