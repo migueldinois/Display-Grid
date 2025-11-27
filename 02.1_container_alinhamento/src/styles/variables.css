@@ -1,0 +1,30 @@
+/* Importação da fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definição das variáveis de cores e gradientes */
+:root {
+    --header-dark: #2f0000;
+    --header-base: #9f0202;
+    --header-light: #da0000;
+
+
+    --text-dark: black;
+    --text-light: white;
+
+
+    --salgados-accent1: rgb(134,248,35);
+    --salgados-accent2: rgb(125, 215, 189);
+
+    /* Cores BackGroound */
+    --frutas-bg: darkcyan;
+    --doces-bg: darkgoldenrod;
+    --sucos-bg: darkmagenta;
+    --lanches-bg: lightgray;
+    --pizzas-bg: lightsalmon;
+    --circle-image: blueviolet;
+
+    /* Cores Gradient */
+    --header-gradient: linear-gradient(to right, var(--header-base), var(--header-dark));
+    --container-gradient: linear-gradient(to right, var(--header-light), var(--header-dark));
+    --salgados-gradient: linear-gradient(to left, var(--salgados-accent1), var(--salgados-accent2));
+}
