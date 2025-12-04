@@ -1,0 +1,66 @@
+/* Estilizando e formatando header */
+.header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+/* Estilizando e formatando section flex     */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+
+/* Estilizando e formtando section grid 1 */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+/* Pegou os filhos da div e apartir do segundo item ele vai fazer essa formatacao,
+ N significa a quantidade de items q tem na grid, e apartir do 4 item da grid faz a formatacao */
+.grid > div:nth-child(n + 4) {
+    display: grid;
+    /* Vai dividir em duas colunas */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+
+.grid > div.anuncio {
+    /* Na coluna 1 */
+    grid-column: 1; 
+    /* Vai ficar na linha 2 até a linha 5 preenchendo tudo */
+    grid-row: 2/5;
+    border-top: 10px solid tomato;
+    display: block;
+}
