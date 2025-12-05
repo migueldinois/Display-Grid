@@ -1,71 +1,144 @@
-/* Estilizando e formatando header */
 .header {
-    background-color: black;
+    background: #1d1e20;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
-
-.menu{
+  }
+  .menu {
     display: flex;
-    gap: 20px;
-
-}
-
-.menu li a {
+  }
+  
+  .menu li {
+    margin-left: 10px;
+  }
+  
+  .menu li a {
     display: block;
     padding: 10px;
-}
-
-/* Estilizando e formatando section flex     */
-
-.flex {
+  }
+  
+  /* CSS FLEXBOX 1 */
+  
+  .flex{
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
-}
-
-.flex > div {
+  }
+  
+  .flex > div{
     flex: 1 1 200px;
     margin: 10px;
-}
-
-
-/* Estilizando e formtando section grid 1 */
-
-.grid {
+  }
+  
+  /* CSS GRID 1 */
+  
+  .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 800px;
     padding: 10px;
     margin: 0 auto;
     grid-gap: 20px;
-}
-
-/* Pegou os filhos da div e apartir do segundo item ele vai fazer essa formatacao,
- N significa a quantidade de items q tem na grid, e apartir do 4 item da grid faz a formatacao */
-.grid > div:nth-child(n + 4) {
+  }
+  /* Dividir em 2 colunas a partir do 4º filho direto do grid1 */
+  .grid1 > div:nth-child(n + 4) {
     display: grid;
-    /* Vai dividir em duas colunas */
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     align-items: center;
-}
-
-
-.grid > div.anuncio {
-    /* Na coluna 1 */
-    grid-column: 1; 
-    /* Vai ficar na linha 2 até a linha 5 preenchendo tudo */
-    grid-row: 2/5;
+  }
+  
+  .grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
     border-top: 10px solid tomato;
     display: block;
+  }
+  
+
+/*  GRID 2 */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sidebar > div {
+    margin-bottom: 10px;
 }
 
 
-@media(max-width:1200px){
+/*  Grid 3 */
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+/*  Pegando o primeiro item do grid e colocando em um lugar personalziado */
+.grid3-item:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.grid3-item {
+    display: grid;
+}
+
+.grid-item img {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
     
 }
+
+.grid3-item {
+    background-color: rgba(0, 0,0,0.6);
+    padding: 10px;
+    
+}
+
+@media(max-width:600px){
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: flex;
+        overflow: scroll;
+    }
+
+
+    .sidebar > div {
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}  
+
+
+@media(max-width:600px){
+    .grid1 {
+        /* Separando em duas oclunas qnd fica menor */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid1 > div:nth-child(n + 4) {
+        display: block;
+    }
+
+    .grid1 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+}  
